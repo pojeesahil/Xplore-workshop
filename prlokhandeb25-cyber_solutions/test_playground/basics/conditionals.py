@@ -1,34 +1,39 @@
 # correct if else ladder to check if person is underage, normal citizen or senior citizen
 # [0,18) -> underage, [18,60) normal age, [60,inf) senior citizen
 # bonus, can you reduce ladder to a one liner?
-age = input("Enter age") # ahh yes age is str , definitely
-
-if age <= 0:
-    print("Lil bro")
-elif age > 100:
-    print("Pay up taxes, person")
+age = int(input("Enter age ")) # ahh yes age is str , definitely
+ 
+if age <= 18:
+    print("Underage")
+elif age > 18 & age < 60:
+    print("Normal age")
 else:
-    print("U still good, unc?")
+    print("Senior citizen")
 
 
-# complete the match
+day = int(input("Enter the day number: "))
 
-day = input("Enter the day number") # dont forget to typecast to int
+print("Today is: ", end="")
 
-print("Today is: ") # how can you avoid printing newline here?
-
-match day:
-    case 1:
-        print("Monday")
-    # fill in the rest
-    case _:
-        print("Funday !") 
-
+if day == 1:
+    print("Monday")
+elif day == 2:
+    print("Tuesday")
+elif day == 3:
+    print("Wednesday")
+elif day == 4:
+    print("Thursday")
+elif day == 5:
+    print("Friday")
+elif day == 6:
+    print("Saturday")
+else:
+    print("Funday!") 
+# version is not up to date so using if elif
 # implement try catch
-
 try:
     print(1/0)
-except IndentationError: # ahh fix the syntax, also when u don't know the error what will u use?
+except Exception as e:
     print("what u tryna do bro")
 finally:
     print("So u done?")
