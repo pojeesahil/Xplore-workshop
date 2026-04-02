@@ -666,17 +666,17 @@
         "stats": {
             "all": {
                 "commits": 0,
-                "prsOpened": 4,
+                "prsOpened": 5,
                 "prsMerged": 2
             },
             "6m": {
                 "commits": 0,
-                "prsOpened": 4,
+                "prsOpened": 5,
                 "prsMerged": 2
             },
             "3m": {
                 "commits": 0,
-                "prsOpened": 4,
+                "prsOpened": 5,
                 "prsMerged": 2
             }
         }
